@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,10 +9,11 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Our Hour">
+  <meta name="author" content="David Valmonte">
 
-  <title>The Beginner's Kitchen</title>
+  <title>Our Hour</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,30 +24,53 @@
 </head>
 
 <body>
+
+  <!--Navigation-->
+
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">The Beginner's Kitchen</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">Our Hour</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="home.html">Home</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="recipes.html">Recipes</a>
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Featured
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="featured.html">Featured</a>
+              <a class="dropdown-item" href="feature-me.html">Feature Me</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="classes.html">Classes</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              More
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="social-media.html">Social Media</a>
+              <a class="dropdown-item" href="contact-us.html">Contact Us</a>
+            </div>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!--End Navigation-->
 
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -56,15 +81,15 @@
       </ol>
 
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url('./images/1900x1080_chickenburrito.jpg')">
+        <div class="carousel-item active" style="background-image: url('images/carousel/c1.jpg')">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url('./images/1900x1080_bowlsoup.jpg')">
+        <div class="carousel-item" style="background-image: url('images/carousel/c3.jpg')">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url('./images/1900x1080_tomatopasta.jpg')">
+        <div class="carousel-item" style="background-image: url('images/carousel/c2.jpg')">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
@@ -82,9 +107,11 @@
 
   <!-- Page Content -->
   <div class="container">
-    <h1 class="my-4">Welcome to the Beginner's Kitchen!</h1>
-    <p>Pure mathematics can not lie! Oh, good grief. You know Jo, I sometimes think that military intelligence is a contradiction in terms. A straight line may be the shortest distance between two points, but it is by no means the most interesting. Jo, did you fail Latin as well as science? Death is always more frightening when it strikes invisibly. Reverse the polarity of the neutron flow. Well, I'll tell you something that should be of vital interest to you.…That you, Sir, are a NITWIT! Jo, look. That's Skaro.</p>
-
+    <h1 class="my-4">Welcome to Our Hour!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
     <!-- Portfolio Section -->
@@ -92,108 +119,123 @@
     <!-- This section shoudld be contained in a row. -->
     <!-- This section should have columns that are 4 units wide at size "md" and above, but 6 units wide at size "sm" and below. -->
 
-    <h2>Our Most Popular Recipes</h2>
+    <h2>Popular Stickers</h2>
 
     <div class="row">
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
           <a href="#">
-            <img class="card-img-top" src="./images/700x540_bbqskewers.jpg" alt="Image of our popular Barbecue Skewers">
+            <img class="card-img-top" src="images/portfolio/p1.jpg" alt="Image of our popular Barbecue Skewers">
           </a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Barbecue Skewers</a>
+              <a href="#">Midnight Crisis</a>
             </h4>
-            <p class="card-text">Timing malfunction. The Master! He's out there. I've got to stop... him... Exotic alien swords are easy to come by, Aces are rare.</p>
+            <p class="card-text">Midnight Crisis Vinyl Decal comes in:
+              - Gloss White
+              - Gloss Black
+              - Reflective Silver
+              - Reflective Gold
+              - Oil Chrome
+
+              8"x3"</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
           <a href="#">
-            <img class="card-img-top" src="./images/700x540_pastasalad.jpg" alt="">
+            <img class="card-img-top" src="images/portfolio/p2.jpg" alt="">
           </a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Pasta Salad</a>
+              <a href="#">Starry Nights</a>
             </h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            <p class="card-text">Starry Nights Slap in Special Holographic Sparkle Finish.
+              8.5"x2.75"</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
           <a href="#">
-            <img class="card-img-top" src="./images/700x540_fancycake.jpg" alt="">
+            <img class="card-img-top" src="images/portfolio/p3.jpg" alt="">
           </a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Chocolate Raspberry Cake</a>
+              <a href="#">Stay Rumble</a>
             </h4>
-            <p class="card-text">Timing malfunction. The Master! He's out there. I've got to stop... him... Exotic alien swords are easy to come by, Aces are rare.</p>
+            <p class="card-text">Oil Chrome
+              7"x2"</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
           <a href="#">
-            <img class="card-img-top" src="./images/700x540_chickenburrito.jpg" alt="">
+            <img class="card-img-top" src="images/portfolio/p4.jpg" alt="">
           </a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Grilled Chicken Burrito</a>
+              <a href="#">Subaru</a>
             </h4>
-            <p class="card-text">Don't worry, Brigadier. People will be shooting at you soon. Your species has the most amazing capacity for self-deception, matched only by its ingenuity when trying to destroy itself.</p>
+            <p class="card-text">SUBARU Vinyl Decal comes in:
+              - Gloss White
+              - Gloss Black
+              - Oil Chrome
+              - Reflective Gold
+              - Reflective Silver</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
           <a href="#">
-            <img class="card-img-top" src="./images/700x540_tomatopasta.jpg" alt="">
+            <img class="card-img-top" src="images/portfolio/p5.jpg" alt="">
           </a>
           <div class="card-body">
-             <h4 class="card-title">
-              <a href="#">Spaghetti Bolognese</a>
-             </h4>
-            <p class="card-text">Don't worry, Brigadier. People will be shooting at you soon. Your species has the most amazing capacity for self-deception, matched only by its ingenuity when trying to destroy itself.</p>
+            <h4 class="card-title">
+              <a href="#">Slowbaru</a>
+            </h4>
+            <p class="card-text">Oil chrome
+              7.75"x3"</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <a href="#">
-              <img class="card-img-top" src="./images/700x540_bowlsoup.jpg" alt="">
-            </a>
-            <div class="card-body">
-               <h4 class="card-title">
-                <a href="#">Tomato Basil Soup</a>
-               </h4>
-              <p class="card-text">Don't worry, Brigadier. People will be shooting at you soon. Your species has the most amazing capacity for self-deception, matched only by its ingenuity when trying to destroy itself.</p>
-            </div>
+        <div class="card h-100">
+          <a href="#">
+            <img class="card-img-top" src="images/portfolio/p6.jpg" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Our Hour Official</a>
+            </h4>
+            <p class="card-text">OUR HOUR official.
+              Comes in oil chrome finish.</p>
           </div>
-        </div>                   
+        </div>
+      </div>
     </div>
     <!-- /.row -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
 
-    <div class="flex-container">
-      <div>
-        <p class="m-0 text-white">Copyright &copy; 2018</p>
+      <div class="flex-container">
+        <div>
+          <p class="m-0 text-white">Copyright &copy; 2019</p>
+        </div>
+        <div>
+          <p class="m-0 text-white">David Valmonte</p>
+        </div>
       </div>
-      <div>
-        <p class="m-0 text-white">A. J. Asplund</p>
-      </div>
-    </div>
-    <!-- /.container -->
-  </footer>
+      <!-- /.container -->
+    </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
+
