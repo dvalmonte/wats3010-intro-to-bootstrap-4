@@ -52,3 +52,7 @@ a img:hover
 {
     transform: scale(1.08);
 }
+
+.bg-dark {
+background-color: #D87DA9 !important;
+}
